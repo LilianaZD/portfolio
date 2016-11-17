@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var connect = require('gulp-connect');
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
@@ -21,4 +22,11 @@ gulp.task('sass', function() {
 
 gulp.task('default', ['sass'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
+});
+
+gulp.task('connect', ['sass'], function() {
+  connect.server({
+    root: '.',
+    livereload: true
+  })
 });
