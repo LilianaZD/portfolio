@@ -17,11 +17,12 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('css'))
+    .pipe(connect.reload());
 });
 
-gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+gulp.task('default', ['sass', 'connect'], function() {
+  gulp.watch(['scss/*.scss'], ['sass']);
 });
 
 gulp.task('connect', ['sass'], function() {
