@@ -13,7 +13,7 @@
   position: absolute;
   top: 0;
   height: 60px;
-  background: yellow;
+  background: #FFCC26;
   width: 100%;
   &__logo {
     width: 50px;
@@ -28,43 +28,62 @@
   transform: translate(80px, 35px);
 }
 
-.square-button_1 {
-  height: 150px !important;
-  width: 150px !important;
-  background: yellow;
-  // background-image: url("images/Pic1.jpg");
-  transform: rotate(-45deg) !important;
-  outline: none;
-}
-
-  .square-button_2 {
-    height: 150px !important;
-    width: 150px !important;
-    background: yellow;
-    transform: rotate(-45deg) translate(60px, -105px) !important;
-    outline: none;
-  }
-
-    .square-button_3 {
-      height: 150px !important;
-      width: 150px !important;
-      background: yellow;
-      transform: rotate(-45deg) translate(-212px, -46px) !important;
-      outline: none;
-    }
-
-
-.square-button_4 {
-  height: 150px !important;
-  width: 150px !important;
-  background: yellow;
-  transform: rotate(-45deg) translate(-152px, -151px) !important;
-  outline: none;
-}
-
 .square-button {
-  min-height: 100px;
-  min-width: 100px;
-  color: yellow !important;
-  transform: rotate(90deg);
+  height: 150px !important;
+  width: 150px !important;
+  background: #FFCC26;
+  // background-image: url("images/Pic1.jpg");
+  outline: none;
+  &_1 {
+    transform: rotate(-45deg) !important;
+  }
+  &_2 {
+    transform: rotate(-45deg) translate(60px, -106px) !important;
+  }
+  &_3 {
+    transform: rotate(-45deg) translate(-212px, -46px) !important;
+  }
+  &_4 {
+    transform: rotate(-45deg) translate(-152px, -151px) !important;
+  }
 }
+// .square-button_1 {
+//   height: 150px !important;
+//   width: 150px !important;
+//   background: #FFCC26;
+//   // background-image: url("images/Pic1.jpg");
+//   transform: rotate(-45deg) !important;
+//   outline: none;
+// }
+//
+//   .square-button_2 {
+//     height: 150px !important;
+//     width: 150px !important;
+//     background: #FFCC26;
+//     transform: rotate(-45deg) translate(60px, -106px) !important;
+//     outline: none;
+//   }
+//
+//     .square-button_3 {
+//       height: 150px !important;
+//       width: 150px !important;
+//       background: #FFCC26;
+//       transform: rotate(-45deg) translate(-212px, -46px) !important;
+//       outline: none;
+//     }
+//
+//
+// .square-button_4 {
+//   height: 150px !important;
+//   width: 150px !important;
+//   background: #FFCC26;
+//   transform: rotate(-45deg) translate(-152px, -151px) !important;
+//   outline: none;
+// }
+
+// .square-button {
+//   min-height: 100px;
+//   min-width: 100px;
+//   color: #FFCC26 !important;
+//   transform: rotate(90deg);
+// }
