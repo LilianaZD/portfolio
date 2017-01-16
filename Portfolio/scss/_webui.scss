@@ -53,11 +53,20 @@
     }
 
     button {
-        background: yellow;
-        height: 30px;
-        width: 60px;
+        background: #FFCC26;
+        height: 35px;
+        width: 75px;
+        color: black;
+        border: 1px solid #FFCC26;
+        border-radius: 3px;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-transform: uppercase;
+        outline: none;
+
+        &:hover {
+            background: yellow;
+        }
     }
 }
