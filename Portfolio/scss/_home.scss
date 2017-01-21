@@ -1,48 +1,69 @@
 .main-body {
-  height: 100% !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #232323;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #232323;
 }
 
 .header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  height: 60px;
-  background: #FFCC26;
-  width: 100%;
-  &__logo {
-    width: 50px;
-    margin-right: 20px;
-  }
+    display: flex;
+    // justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background: #FFCC26;
+    width: 100%;
+
+    &__logo {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    &-nav {
+        &_btn {
+            width: 100px;
+            height: 100%;
+            font-size: 0.9em;
+            margin-right: 20px;
+            color: black;
+            outline: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
 }
 
 .main-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(80px, 35px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(80px, 35px);
 }
 
 .square-button {
-  height: 150px !important;
-  width: 150px !important;
-  background: #FFCC26;
-  outline: none;
-  &_1 {
-    transform: rotate(-45deg) !important;
-  }
-  &_2 {
-    transform: rotate(-45deg) translate(60px, -106px) !important;
-  }
-  &_3 {
-    transform: rotate(-45deg) translate(-212px, -46px) !important;
-  }
-  &_4 {
-    transform: rotate(-45deg) translate(-152px, -151px) !important;
-  }
+    height: 150px !important;
+    width: 150px !important;
+    background: #FFCC26;
+    outline: none;
+
+    &_1 {
+        transform: rotate(-45deg) !important;
+    }
+
+    &_2 {
+        transform: rotate(-45deg) translate(60px, -106px) !important;
+    }
+
+    &_3 {
+        transform: rotate(-45deg) translate(-212px, -46px) !important;
+    }
+
+    &_4 {
+        transform: rotate(-45deg) translate(-152px, -151px) !important;
+    }
 }
